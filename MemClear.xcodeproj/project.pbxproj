@@ -12,6 +12,7 @@
 		B577C8BC19F2AACA001CD547 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = B577C8BB19F2AACA001CD547 /* AppDelegate.applescript */; };
 		B577C8BE19F2AACA001CD547 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B577C8BD19F2AACA001CD547 /* Images.xcassets */; };
 		B577C8C119F2AACA001CD547 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B577C8BF19F2AACA001CD547 /* MainMenu.xib */; };
+		ED01C0661B8A57FC00662CB8 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED01C0651B8A57FC00662CB8 /* AppleScriptKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B577C8BB19F2AACA001CD547 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
 		B577C8BD19F2AACA001CD547 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B577C8C019F2AACA001CD547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		ED01C0651B8A57FC00662CB8 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = System/Library/Frameworks/AppleScriptKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED01C0661B8A57FC00662CB8 /* AppleScriptKit.framework in Frameworks */,
 				B577C8B519F2AACA001CD547 /* AppleScriptObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +59,7 @@
 		B577C8B319F2AACA001CD547 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED01C0651B8A57FC00662CB8 /* AppleScriptKit.framework */,
 				B577C8B419F2AACA001CD547 /* AppleScriptObjC.framework */,
 			);
 			name = Frameworks;
@@ -252,6 +256,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MemClear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -263,6 +268,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MemClear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -286,6 +292,7 @@
 				B577C8C619F2AACA001CD547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
