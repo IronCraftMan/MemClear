@@ -24,6 +24,7 @@
 		B577C8BD19F2AACA001CD547 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B577C8C019F2AACA001CD547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		ED01C0651B8A57FC00662CB8 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = System/Library/Frameworks/AppleScriptKit.framework; sourceTree = SDKROOT; };
+		EDAC53351B9105C900D0D343 /* MemClear.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MemClear.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 		B577C8B619F2AACA001CD547 /* MemClear */ = {
 			isa = PBXGroup;
 			children = (
+				EDAC53351B9105C900D0D343 /* MemClear.entitlements */,
 				B577C8BB19F2AACA001CD547 /* AppDelegate.applescript */,
 				B577C8BD19F2AACA001CD547 /* Images.xcassets */,
 				B577C8BF19F2AACA001CD547 /* MainMenu.xib */,
@@ -116,6 +118,11 @@
 				TargetAttributes = {
 					B577C8B019F2AACA001CD547 = {
 						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -253,10 +260,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MemClear/MemClear.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MemClear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OSACOMPILE_EXECUTE_ONLY = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cole.MemClear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -266,10 +275,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MemClear/MemClear.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MemClear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OSACOMPILE_EXECUTE_ONLY = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cole.MemClear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
