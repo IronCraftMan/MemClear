@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8187.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9052"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -221,37 +221,48 @@
             <modifierMask key="keyEquivalentModifierMask"/>
         </menuItem>
         <window title="MemClear" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="ccD-ST-iPZ" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="136" y="163" width="405" height="61"/>
+            <rect key="contentRect" x="136" y="163" width="405" height="125"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="vsq-mi-XpZ" userLabel="MemClear">
-                <rect key="frame" x="0.0" y="0.0" width="405" height="61"/>
+                <rect key="frame" x="0.0" y="0.0" width="405" height="125"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EKp-p7-khu">
-                        <rect key="frame" x="24" y="13" width="123" height="32"/>
-                        <buttonCell key="cell" type="push" title="Free Up RAM" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="41X-f5-XlX">
+                        <rect key="frame" x="14" y="45" width="124" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Free Up RAM" bezelStyle="rounded" alignment="center" lineBreakMode="charWrapping" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="41X-f5-XlX">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="systemThin" size="14"/>
                         </buttonCell>
                         <connections>
                             <action selector="buttonFreeUp:" target="Voe-Tx-rLC" id="Jmd-cM-vMU"/>
                         </connections>
                     </button>
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FHy-pO-2tX">
+                        <rect key="frame" x="158" y="14" width="88" height="97"/>
+                        <animations/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="NSApplicationIcon" id="rPu-vk-Cv1"/>
+                    </imageView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KnN-0Q-01n">
-                        <rect key="frame" x="316" y="13" width="66" height="32"/>
+                        <rect key="frame" x="301" y="45" width="66" height="32"/>
+                        <animations/>
                         <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Bjl-DR-WDD">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="systemThin" size="14"/>
                         </buttonCell>
                         <connections>
                             <action selector="buttonQuit:" target="Voe-Tx-rLC" id="8oa-U4-qAQ"/>
                         </connections>
                     </button>
                 </subviews>
+                <animations/>
             </view>
-            <point key="canvasLocation" x="104.5" y="324.5"/>
+            <point key="canvasLocation" x="104.5" y="356.5"/>
         </window>
     </objects>
+    <resources>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+    </resources>
 </document>
